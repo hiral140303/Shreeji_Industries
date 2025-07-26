@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Shreeji Industries</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#64748b',
+                        accent: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+   <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <i data-lucide="settings" class="text-white w-6 h-6"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold text-primary">Shreeji Industries</h1>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="products.html" class="nav-link active">Products</a>
+                    <a href="clientele.html" class="nav-link">Clientele</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-4 space-y-2">
+                    <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Home</a>
+                    <a href="about.html" class="block py-2 text-gray-700 hover:text-primary">About Us</a>
+                    <a href="products.html" class="block py-2 text-gray-700 hover:text-primary">Products</a>
+                    <a href="clientele.html" class="block py-2 text-gray-700 hover:text-primary">Clientele</a>
+                    <a href="contact.html" class="block py-2 text-gray-700 hover:text-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary to-blue-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold mb-6 animate-slide-up">Our Products</h1>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto animate-slide-up delay-200">
+                    we "Shreeji Industries" are a leading Manufacturer of a wide range of LTB-4Bush, LB Bush and Counter Bush.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Product Categories -->
+    <section class="py-20  pl-4 pr-4">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Product Categories</h2>
+                <p class="text-xl text-gray-600">Explore our comprehensive product portfolio</p>
+                
+                <!-- Category Filter -->
+                <!-- <div class="flex flex-wrap justify-center gap-4 mt-8">
+                    <button class="filter-btn active" data-filter="all">All Products</button>
+                    <button class="filter-btn" data-filter="electronics">Electronics</button>
+                    <button class="filter-btn" data-filter="automotive">Automotive</button>
+                    <button class="filter-btn" data-filter="industrial">Industrial</button>
+                    <button class="filter-btn" data-filter="tools">Tools</button>
+                </div> -->
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="products-grid">
+                <!-- Electronics Products -->
+                <div class="product-item electronics bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-teal-600 flex items-center justify-center">
+                        <img src="images/Thrust Bearing.jpeg" alt="Submersible Spares" class="h-full w-full object-cover" style="width: 150px; height:150px;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Thrust Bearing</h3>
+                        <p class="text-gray-600 mb-4">A thrust bearing is designed to handle axial loads (pushing force) in rotating machinery. Commonly used in automotive, marine, and industrial equipment to support rotating shafts and reduce friction.</p>
+                        <div class="flex justify-between items-center">
+                            <!-- <span class="text-primary font-semibold">Electronics</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                                Learn More
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-item electronics bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-teal-600 flex items-center justify-center">
+                        <img src="images/Thrust Plate.jpeg" alt="Submersible Spares" class="h-full w-full object-cover" style="width: 150px; height:150px;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Thrust Plate</h3>
+                        <p class="text-gray-600 mb-4">A thrust plate works with thrust bearings to limit shaft movement and reduce wear. It provides a surface for the bearing to press against and is crucial in engines and gear systems.</p>
+                        <div class="flex justify-between items-center">
+                            <!-- <span class="text-primary font-semibold">Electronics</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                                Learn More
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-item electronics bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-teal-600 flex items-center justify-center">
+                        <img src="images/copper_ring.jpeg" alt="Submersible Spares" class="h-full w-full object-cover" style="width: 150px; height:150px;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Copper Ring</h3>
+                        <p class="text-gray-600 mb-4">A copper ring is typically used for sealing, electrical conductivity, or cushioning in mechanical assemblies. Its anti-corrosive and conductive properties make it ideal for automotive and industrial applications.</p>
+                        <div class="flex justify-between items-center">
+                            <!-- <span class="text-primary font-semibold">Electronics</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                                Learn More
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item electronics bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-teal-600 flex items-center justify-center">
+                        <img src="images/Automobile Bush.jpeg" alt="Submersible Spares" class="h-full w-full object-cover" style="width: 150px; height:150px;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Automobile Bush</h3>
+                        <p class="text-gray-600 mb-4">An automobile bush is a rubber or metal sleeve used to reduce vibration and noise in vehicles. It acts as a cushion between parts, such as suspension components, to ensure smoother movement and durability.</p>
+                        <div class="flex justify-between items-center">
+                            <!-- <span class="text-primary font-semibold">Electronics</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                                Learn More
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-item electronics bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-teal-600 flex items-center justify-center">
+                        <img src="images/submersible-pump-spare.jpg" alt="Submersible Spares" class="h-full w-full object-cover" style="width: 150px; height:150px;">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Submersible Spares</h3>
+                        <p class="text-gray-600 mb-4">Submersible spares are replacement parts used in submersible pumps, such as impellers, shafts, bearings, and diffusers. These parts ensure the efficient and long-lasting operation of water pumping systems.</p>
+                        <div class="flex justify-between items-center">
+                            <!-- <span class="text-primary font-semibold">Electronics</span>
+                            <button class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                                Learn More
+                            </button> -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section class="py-20 bg-gray-50  pl-4 pr-4">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Product Features</h2>
+                <p class="text-xl text-gray-600">What makes our products stand out</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="shield-check" class="text-primary w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Quality Assured</h3>
+                    <p class="text-gray-600">Every product is thoroughly tested to meet the highest quality standards</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="timer" class="text-primary w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Cost Effective</h3>
+                    <p class="text-gray-600">Our solutions deliver excellent performance at competitive prices</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="settings" class="text-primary w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Advanced Technology Used</h3>
+                    <p class="text-gray-600">Manufactured using the latest tools and cutting-edge machinery</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="headphones" class="text-primary w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Fast Delivery</h3>
+                    <p class="text-gray-600">We ensure quick turnaround times without compromising quality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <!-- <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Need Custom Products?</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                We specialize in custom manufacturing solutions tailored to your specific requirements. 
+                Get in touch with our experts today.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-accent hover:bg-yellow-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                    Request Quote
+                </a>
+                <a href="https://wa.me/918200731517?text=Hello%20I%20want%20to%20inquire%20about%20your%20products" 
+                   class="whatsapp-btn border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+<footer class="bg-gray-900 text-white py-16">
+    <div class="container mx-auto px-4">
+        <!-- 3 Equal Columns -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            
+            <!-- Column 1: Company Info -->
+            <div style="margin-left:10%;">
+                <div class="flex items-center justify-center md:justify-start space-x-3 mb-6">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <i data-lucide="settings" class="text-white w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold">Shreeji Industries</h3>
+                </div>
+                <p class="text-gray-400 mb-6">Leading manufacturing solutions with cutting-edge technology and superior quality.</p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-lucide="facebook" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-lucide="twitter" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links (Centered on All Screens) -->
+            <div class="flex flex-col items-center" style="margin-right: 10%;">
+                <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                <ul class="space-y-3 text-center">
+                    <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Products</a></li>
+                    <li><a href="clientele.html" class="text-gray-400 hover:text-white transition-colors">Clientele</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact Info -->
+            <div>
+                <h4 class="text-lg font-semibold mb-6 text-center md:text-left">Contact Info</h4>
+                <div class="space-y-4">
+                    <div class="flex items-start justify-center md:justify-start space-x-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-primary mt-1"></i>
+                        <span class="text-gray-400 text-left">L-527/1, Odhav GIDC Estate, G.I.D.C, Odhav, Ahmedabad</span>
+                    </div>
+                    <div class="flex items-center justify-center md:justify-start space-x-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                        <a href="https://wa.me/918200731517?text=Hello%20I%20want%20to%20inquire%20about%20your%20products"
+                           class="text-gray-400 hover:text-white transition-colors">+91 82007 31517</a>
+                    </div>
+                    <div class="flex items-center justify-center md:justify-start space-x-3">
+                        <i data-lucide="mail" class="w-5 h-5 text-primary"></i>
+                        <a href="mailto:shayonaindustries1604@gmail.com"
+                           class="text-gray-400 hover:text-white transition-colors">shayonaindustries1604@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+            <p class="text-gray-400">&copy; 2025 Shreeji Industries. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
