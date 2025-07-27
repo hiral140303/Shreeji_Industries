@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,18 +22,19 @@
         }
     </script>
 </head>
+
 <body class="font-sans">
     <!-- Navigation -->
-   <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300" id="navbar">
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300" id="navbar">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-3">
                     <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                        <i data-lucide="settings" class="text-white w-6 h-6"></i>
+                        <img src="images/logo1.jpg" alt="Logo" class="w-full h-full object-cover" />
                     </div>
                     <h1 class="text-2xl font-bold text-primary">Shreeji Industries</h1>
                 </div>
-                
+
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
                     <a href="index.html" class="nav-link">Home</a>
@@ -41,13 +43,13 @@
                     <a href="clientele.html" class="nav-link">Clientele</a>
                     <a href="contact.html" class="nav-link active">Contact</a>
                 </div>
-                
+
                 <!-- Mobile Menu Button -->
                 <button class="md:hidden" id="mobile-menu-btn">
                     <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
-            
+
             <!-- Mobile Menu -->
             <div class="md:hidden hidden" id="mobile-menu">
                 <div class="py-4 space-y-2">
@@ -67,7 +69,7 @@
             <div class="text-center">
                 <h1 class="text-5xl font-bold mb-6 animate-slide-up">Contact Us</h1>
                 <p class="text-xl opacity-90 max-w-3xl mx-auto animate-slide-up delay-200">
-                    Ready to discuss your manufacturing needs? Get in touch with our expert team 
+                    Ready to discuss your manufacturing needs? Get in touch with our expert team
                     for customized solutions and competitive quotes.
                 </p>
             </div>
@@ -78,41 +80,56 @@
     <section class="py-20">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-                <div class="text-center group">
-                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors duration-300">
+                <a href="https://www.google.com/maps/search/?api=1&query=L-527%2F1%2C+Odhav+GIDC+Estate%2C+G.I.D.C%2C+Odhav%2C+Ahmedabad"
+                    target="_blank" class="block text-center group">
+
+                    <div
+                        class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors duration-300">
                         <i data-lucide="map-pin" class="text-primary w-10 h-10"></i>
                     </div>
+
                     <h3 class="text-xl font-bold mb-4 text-gray-800">Visit Us</h3>
+
                     <p class="text-gray-600">
-                         L-527/1, Odhav GIDC Estate,<br>G.I.D.C, Odhav,Ahmedabad
+                        L-527/1, Odhav GIDC Estate,<br>G.I.D.C, Odhav, Ahmedabad
                     </p>
-                </div>
-                
+                </a>
+
+
+
                 <div class="text-center group">
-                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors duration-300">
-                        <i data-lucide="phone" class="text-primary w-10 h-10"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Call Us</h3>
-                    <p class="text-gray-600">
-                        <a href="https://wa.me/918200731517?text=Hello%20I%20want%20to%20inquire%20about%20your%20products" 
-                           class="whatsapp-btn hover:text-primary transition-colors">+91 82007 31517</a><br>
-                        <a href="tel:+11234567890" class="hover:text-primary transition-colors">+91 98251 96233</a>
-                    </p>
+                    <a href="tel:+918200731517" class="block text-center group">
+                        <div
+                            class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors duration-300">
+                            <i data-lucide="phone" class="text-primary w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Call Us</h3>
+                        <p class="text-gray-600">
+                            <a href="https://wa.me/918200731517?text=Hello%20I%20want%20to%20inquire%20about%20your%20products"
+                                class="whatsapp-btn hover:text-primary transition-colors">+91 82007 31517</a><br>
+                            <a href="tel:+11234567890" class="hover:text-primary transition-colors">+91 98251 96233</a>
+                        </p>
+                    </a>
                 </div>
-                
+
                 <div class="text-center group">
-                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors duration-300">
-                        <i data-lucide="mail" class="text-primary w-10 h-10"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-4 text-gray-800">Email Us</h3>
-                    <p class="text-gray-600">
-                        <a href="mailto:shayonaindustries1604@gmail.com" class="hover:text-primary transition-colors">shayonaindustries1604@gmail.com</a><br>
-                        <!-- <a href="mailto:sales@techmanufacture.com" class="hover:text-primary transition-colors">sales@techmanufacture.com</a> -->
-                    </p>
+                    <a href="mailto:shayonaindustries1604@gmail.com" class="hover:text-primary transition-colors">
+
+                        <div
+                            class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors duration-300">
+                            <i data-lucide="mail" class="text-primary w-10 h-10"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-gray-800">Email Us</h3>
+                        <p class="text-gray-600">
+                            shayonaindustries1604@gmail.com<br>
+                            <!-- <a href="mailto:sales@techmanufacture.com" class="hover:text-primary transition-colors">sales@techmanufacture.com</a> -->
+                        </p>
+                    </a>
                 </div>
-                
+
                 <div class="text-center group">
-                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors duration-300">
+                    <div
+                        class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors duration-300">
                         <i data-lucide="clock" class="text-primary w-10 h-10"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-4 text-gray-800">Business Hours</h3>
@@ -125,7 +142,7 @@
             </div>
         </div>
     </section>
-     
+
     <!-- Map Section -->
     <section class="py-20">
         <div class="container mx-auto px-4">
@@ -133,7 +150,7 @@
                 <h2 class="text-4xl font-bold text-gray-800 mb-4">Find Us</h2>
                 <p class="text-xl text-gray-600">Visit our state-of-the-art manufacturing facility</p>
             </div>
-            
+
             <!-- Placeholder for map - replace with actual map embed -->
             <!-- <div class="bg-gray-200 h-96 rounded-2xl shadow-lg flex items-center justify-center">
                 <div class="text-center">
@@ -151,18 +168,13 @@
                 </div>
             </div> -->
             <div class="bg-gray-200 rounded-2xl shadow-lg p-4">
-  <div class="w-full h-80 rounded-xl overflow-hidden mb-4">
-    <iframe 
-      width="100%" 
-      height="100%" 
-      style="border:0;" 
-      loading="lazy"
-      allowfullscreen 
-      referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps?q=L-527/1, Odhav GIDC Estate, G.I.D.C, Odhav, Ahmedabad&output=embed">
-    </iframe>
-  </div>
-</div>
+                <div class="w-full h-80 rounded-xl overflow-hidden mb-4">
+                    <iframe width="100%" height="100%" style="border:0;" loading="lazy" allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps?q=L-527/1, Odhav GIDC Estate, G.I.D.C, Odhav, Ahmedabad&output=embed">
+                    </iframe>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -174,84 +186,91 @@
                 <i data-lucide="check-circle" class="w-8 h-8 text-green-600"></i>
             </div>
             <h3 class="text-2xl font-bold text-gray-800 mb-4">Thank You!</h3>
-            <p class="text-gray-600 mb-6">Your inquiry has been submitted successfully. We'll get back to you within 24 hours.</p>
-            <button onclick="closeSuccessModal()" 
-                    class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300">
+            <p class="text-gray-600 mb-6">Your inquiry has been submitted successfully. We'll get back to you within 24
+                hours.</p>
+            <button onclick="closeSuccessModal()"
+                class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300">
                 Close
             </button>
         </div>
     </div>
 
     <!-- Footer -->
-<footer class="bg-gray-900 text-white py-16">
-    <div class="container mx-auto px-4">
-        <!-- 3 Equal Columns -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-            
-            <!-- Column 1: Company Info -->
-            <div style="margin-left:10%;">
-                <div class="flex items-center justify-center md:justify-start space-x-3 mb-6">
-                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                        <i data-lucide="settings" class="text-white w-6 h-6"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold">Shreeji Industries</h3>
-                </div>
-                <p class="text-gray-400 mb-6">Leading manufacturing solutions with cutting-edge technology and superior quality.</p>
-                <div class="flex justify-center md:justify-start space-x-4">
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                        <i data-lucide="facebook" class="w-5 h-5"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                        <i data-lucide="twitter" class="w-5 h-5"></i>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
-                        <i data-lucide="linkedin" class="w-5 h-5"></i>
-                    </a>
-                </div>
-            </div>
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <!-- 3 Equal Columns -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
 
-            <!-- Column 2: Quick Links (Centered on All Screens) -->
-            <div class="flex flex-col items-center" style="margin-right: 10%;">
-                <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
-                <ul class="space-y-3 text-center">
-                    <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                    <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Products</a></li>
-                    <li><a href="clientele.html" class="text-gray-400 hover:text-white transition-colors">Clientele</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 3: Contact Info -->
-            <div>
-                <h4 class="text-lg font-semibold mb-6 text-center md:text-left">Contact Info</h4>
-                <div class="space-y-4">
-                    <div class="flex items-start justify-center md:justify-start space-x-3">
-                        <i data-lucide="map-pin" class="w-5 h-5 text-primary mt-1"></i>
-                        <span class="text-gray-400 text-left">L-527/1, Odhav GIDC Estate, G.I.D.C, Odhav, Ahmedabad</span>
+                <!-- Column 1: Company Info -->
+                <div style="margin-left:10%;">
+                    <div class="flex items-center justify-center md:justify-start space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <img src="images/logo1.jpg" alt="Logo" class="w-full h-full object-cover" />
+                        </div>
+                        <h3 class="text-2xl font-bold">Shreeji Industries</h3>
                     </div>
-                    <div class="flex items-center justify-center md:justify-start space-x-3">
-                        <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
-                        <a href="https://wa.me/918200731517?text=Hello%20I%20want%20to%20inquire%20about%20your%20products"
-                           class="text-gray-400 hover:text-white transition-colors">+91 82007 31517</a>
-                    </div>
-                    <div class="flex items-center justify-center md:justify-start space-x-3">
-                        <i data-lucide="mail" class="w-5 h-5 text-primary"></i>
-                        <a href="mailto:shayonaindustries1604@gmail.com"
-                           class="text-gray-400 hover:text-white transition-colors">shayonaindustries1604@gmail.com</a>
+                    <p class="text-gray-400 mb-6">Leading manufacturing solutions with cutting-edge technology and
+                        superior quality.</p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
                     </div>
                 </div>
+
+                <!-- Column 2: Quick Links (Centered on All Screens) -->
+                <div class="flex flex-col items-center" style="margin-right: 10%;">
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-center">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a>
+                        </li>
+                        <li><a href="products.html"
+                                class="text-gray-400 hover:text-white transition-colors">Products</a></li>
+                        <li><a href="clientele.html"
+                                class="text-gray-400 hover:text-white transition-colors">Clientele</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6 text-center md:text-left">Contact Info</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start justify-center md:justify-start space-x-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-primary mt-1"></i>
+                            <span class="text-gray-400 text-left">L-527/1, Odhav GIDC Estate, G.I.D.C, Odhav,
+                                Ahmedabad</span>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start space-x-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                            <a href="https://wa.me/918200731517?text=Hello%20I%20want%20to%20inquire%20about%20your%20products"
+                                class="text-gray-400 hover:text-white transition-colors">+91 82007 31517</a>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start space-x-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-primary"></i>
+                            <a href="mailto:shayonaindustries1604@gmail.com"
+                                class="text-gray-400 hover:text-white transition-colors">shayonaindustries1604@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 Shreeji Industries. All rights reserved.</p>
+            </div>
         </div>
-
-        <!-- Footer Bottom -->
-        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-            <p class="text-gray-400">&copy; 2025 Shreeji Industries. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
